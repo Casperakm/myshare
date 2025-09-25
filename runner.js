@@ -1,4 +1,8 @@
 // Save a value to the Capacitor KV store
+const script = document.createElement("script");
+script.src = "https://unpkg.com/mqtt/dist/mqtt.min.js";
+script.onload = callback;
+document.head.appendChild(script);
 addEventListener('mybrokerclient', async (resolve, reject, args) => {
   // Options for MQTT connection
   const options = {
